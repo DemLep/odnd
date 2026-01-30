@@ -1,0 +1,43 @@
+{
+    "id": "odnd",
+    "title": "Dungeons and Dragons - Original",
+    "description": "This is the ruleset for D&D before the Basic/Advance split.",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Demonic Leprechaun",
+            "discord": "demonicleprechaun"
+        }
+    ],
+    "compatibility": {
+        "minimum": 12,
+        "verified": "13.351",
+        "maximum": 13
+    },
+    "esmodules": [
+        "odnd.mjs"
+    ],
+    "styles": [
+        "odnd.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": false,
+    "grid": {
+        "distance": 5,
+        "unts": "Feet"
+    },
+
+    "documentTypes": {
+
+        "Actor": {
+        
+            "player_character": {}
+        }
+    }
+}
