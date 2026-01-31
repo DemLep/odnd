@@ -1,17 +1,27 @@
-export default class ODNDCharacterSheet extends foundry.appv1.sheets.ActorSheet {
+const {HandlebarsApplicationMixin} = foundry.applications.api
+const {ActorSheetV2} = foundry.applications.sheets
+
+export default class ODNDCharacterSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     sheetContext = {};
 
     static DEFAULT_OPTIONS = {
         tag: "form",
         form: {
-            handler: MyApplication.myFormHandler,
+            handler: ODNDCharacterSheet.#onSubmitForm,
             submitOnChange: true,
             closeOnSubmit: false
         }
     }
 
-    get template(){
-        return `systems/odnd/templates/sheets/actor/player_character-sheet.html`;
+    static async #onSubmitForm(event, form, formData) {
+        event.preventDefault()
+        await this.document.update(formData.object)
+    }
+
+    static PARTS = {
+        form: {
+            template: "systems/odnd/templates/sheets/actor/player_character-sheet.html"
+        }
     }
 
     async _prepareContext(options) {
@@ -31,4 +41,6 @@ export default class ODNDCharacterSheet extends foundry.appv1.sheets.ActorSheet 
 
         return CONTEXT;
     }
+
+    
 }
