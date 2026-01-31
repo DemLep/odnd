@@ -37,7 +37,9 @@
 
         "Actor": {
         
-            "player_character": {}
+            "player_character": {
+                "class": ""
+            }
         }
     }
 }
