@@ -38,7 +38,39 @@
         "Actor": {
         
             "player_character": {
-                "class": ""
+                "class": "",
+                "title": "",
+                "level": 0,
+                "experience": {
+                    "current": 0,
+                    "nextlevel": 0
+                }
+            }
+        },
+
+        "Item": {
+
+            "class": {
+                "limitation": {
+                    "race": "",
+                    "weapon": "",
+                    "armor": "",
+                    "magic": ""
+                },
+                "max_level": 0,
+                "level": {
+                    "hit_dice": "",
+                    "title": "",
+                    "xp_to_next_level": 0,
+                    "fighting_capability": "",
+                    "feature": "",
+                    "spell_slot1": 0,
+                    "spell_slot2": 0,
+                    "spell_slot3": 0,
+                    "spell_slot4": 0,
+                    "spell_slot5": 0,
+                    "spell_slot6": 0
+                }
             }
         }
     }

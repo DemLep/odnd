@@ -1,6 +1,9 @@
 {
 	"ODND": {
 		"SystemName": "Dungeons & Dragons - Original",
-		"SheetClassCharacter": "Player Character"
+		"SheetClass": {
+			"Character": "Player Character",
+			"Class": "Class"
+		}
 	}
 }

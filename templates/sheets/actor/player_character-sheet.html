@@ -1,11 +1,24 @@
+
 <section class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
+    <header class="sheet-header" style="display: flex; gap: 16px;">
         <img src="{{item.img}}" data-edit="img" titles="{{actor.name}}" height="64" width="64" />
         <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Name" /></h1>
     </header>
     <body>
-        <div>
-            <span>Class:</br><input name="system.class" type="text" value="{{system.class}}" /></input></span>
+        <hr />
+        <div style="display: flex; gap: 16px;">
+            <span>Class:</span><br />
+            <span><input name="system.class" type="text" value="{{system.class}}" size="15" maxlength="15" /></span><br />
+            <span>Level:</span><br />
+            <span><input name="system.level" type="number" value="{{system.level}}" size="3" maxlength="3" /></span><br />
+            <span>Title:</span><br />
+            <span><input name="system.title" type="text" value="{{system.title}}" size="20" maxlength="20" /></span>
+        </div>
+        <div style="display: flex; gap: 16px;">
+            <span>Experience:</span><br />
+            <span><input name="system.experience.current" type="number" value="{{system.experience.current}}" size="10" maxlength="10" /></span><br />
+            <span>/</span><br />
+            <span><input name="system.experience.nextlevel" type="number" value="{{system.experience.nextlevel}}" size="10" maxlength="10" readonly="readonly" /></span>
         </div>
     </body>
 </section>

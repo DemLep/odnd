@@ -1,0 +1,64 @@
+<section class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" titles="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Class" /></h1>
+    </header>
+    <body>
+        <hr />
+        <div>
+            <span>Limitations:</span><br />
+        </div>
+        <div>
+            <span>Race:</span><br />
+            <span><input name="system.limitation.race" type="text" value="{{system.limitation.race}}" /></span>
+        </div>
+        <div>
+            <span>Weapon:</span><br />
+            <span><input name="system.limitation.weapon" type="text" value="{{system.limitation.weapon}}" /></span>
+        </div>
+        <div>
+            <span>Armor:</span><br />
+            <span><input name="system.limitation.armor" type="text" value="{{system.limitation.armor}}" /></span>
+        </div>
+        <div>
+            <span>Magic:</span><br />
+            <span><input name="system.limitation.magic" type="text" value="{{system.limitation.magic}}" /></span>
+        </div>
+        <div style="display: flex;">
+            <span>Top Level:</span><br />
+            <span><input name="system.max_level" type="number" value="{{system.max_level}}" /></span>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Hit Dice</th>
+                    <th>Title</th>
+                    <th>Fighting Capability</th>
+                    <th>XP to Next Level</th>
+                    <th>Feature</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input name="system.levels.hit_dice" type="text" value="{{system.levels.hit_dice}}" /></td>
+                        <td><input name="system.levels.title" type="text" value="{{system.levels.title}}" /></td>
+                        <td><input name="system.levels.fighting_capability" type="text" value="{{system.levels.fighting_capability}}" /></td>
+                        <td><input name="system.levels.xp_to_next_level" type="number" value="{{system.levels.xp_to_next_level}}" /></td>
+                        <td><input name="system.levels.feature" type="text" value="{{system.levels.feature}}" /></td>
+                        <td><input name="system.levels.spell_slot1" type="number" value="{{system.levels.spell_slot1}}" /></td>
+                        <td><input name="system.levels.spell_slot2" type="number" value="{{system.levels.spell_slot2}}" /></td>
+                        <td><input name="system.levels.spell_slot3" type="number" value="{{system.levels.spell_slot3}}" /></td>
+                        <td><input name="system.levels.spell_slot4" type="number" value="{{system.levels.spell_slot4}}" /></td>
+                        <td><input name="system.levels.spell_slot5" type="number" value="{{system.levels.spell_slot5}}" /></td>
+                        <td><input name="system.levels.spell_slot6" type="number" value="{{system.levels.spell_slot6}}" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</section>
